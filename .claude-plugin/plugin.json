@@ -1,0 +1,19 @@
+{
+  "name": "digitalarchive-test-toolkit",
+  "description": "Digital Archive UI test creation and validation toolkit. Creates and validates Playwright E2E tests against the live Digital Archive application using Playwright MCP. Uses specialized agents for DOM exploration, selector auditing, regression testing, and test code generation. Targets the React 19 + TanStack Router + i18next frontend.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Gal Sened"
+  },
+  "keywords": [
+    "ui-testing",
+    "e2e",
+    "playwright",
+    "digital-archive",
+    "react",
+    "test-validation",
+    "test-generation",
+    "browser-automation",
+    "page-object-model"
+  ]
+}
