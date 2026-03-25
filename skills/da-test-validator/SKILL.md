@@ -37,8 +37,8 @@ Try using `mcp__playwright__browser_snapshot`. If it fails, tell user: "Playwrig
 
 **Check 2: Read credentials**
 Read env files in order (use Read tool):
-1. `C:\Users\gals\repos\elado-digitalarchive\e2e\.env`
-2. Fallback: `C:\Users\gals\repos\elado-digitalarchive\.env`
+1. `C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\.env`
+2. Fallback: `C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive.env`
 
 Parse DA_BASE_URL, DA_USERNAME, DA_PASSWORD, DA_TENANT.
 If neither exists or creds empty, tell user: "Digital Archive credentials not found. Create e2e/.env from .env.example and fill in credentials."
@@ -131,7 +131,7 @@ If the audit found MISSING selectors with HIGH confidence fixes:
      prompt: |
        You are the regression-runner agent. POM file {pom_file} was modified.
        Changes: {summary of fixes applied}
-       Working directory: C:\Users\gals\repos\elado-digitalarchive\e2e\
+       Working directory: C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\
 
        Follow your full regression protocol:
        1. Find all test files importing this POM
@@ -146,7 +146,7 @@ If the audit found MISSING selectors with HIGH confidence fixes:
 
 Run via Bash:
 ```bash
-cd "C:\Users\gals\repos\elado-digitalarchive\e2e" && npx playwright test --list {target_test_paths} 2>&1
+cd "C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e" && npx playwright test --list {target_test_paths} 2>&1
 ```
 
 ## 6. PHASE 3: SELECTIVE EXECUTE
@@ -181,7 +181,7 @@ Which option?
 
 Execute the user's choice:
 ```bash
-cd "C:\Users\gals\repos\elado-digitalarchive\e2e" && npx playwright test {selection} --reporter=list 2>&1
+cd "C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e" && npx playwright test {selection} --reporter=list 2>&1
 ```
 
 Report results. For failures: include test name, error message, and take a screenshot if possible.

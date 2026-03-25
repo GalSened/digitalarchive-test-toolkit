@@ -21,7 +21,7 @@ You receive the POM filename (e.g., `archives-page.ts`) in $ARGUMENTS. Your job 
 
 ## 2. WORKING DIRECTORY
 
-ALL commands run from: `C:\Users\gals\repos\elado-digitalarchive\e2e\`
+ALL commands run from: `C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\`
 
 Always `cd` into this directory before running any bash command.
 
@@ -37,7 +37,7 @@ Search for imports in the test directory:
 ```
 Grep tool:
   pattern: "from.*pages/{pom_module}"
-  path: C:\Users\gals\repos\elado-digitalarchive\e2e\tests
+  path: C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\tests
   output_mode: files_with_matches
 ```
 
@@ -45,7 +45,7 @@ Also check fixture files:
 ```
 Grep tool:
   pattern: "from.*pages/{pom_module}"
-  path: C:\Users\gals\repos\elado-digitalarchive\e2e\fixtures
+  path: C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\fixtures
   output_mode: files_with_matches
 ```
 
@@ -56,7 +56,7 @@ If no test files import this POM, report that and stop -- there is nothing to re
 Run Playwright test list to verify imports and test discovery work:
 
 ```bash
-cd "C:\Users\gals\repos\elado-digitalarchive\e2e"
+cd "C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e"
 npx playwright test --list {affected files} 2>&1
 ```
 
@@ -67,7 +67,7 @@ Collection must succeed with 0 errors. If collection fails, the POM change broke
 Execute only the affected test files:
 
 ```bash
-cd "C:\Users\gals\repos\elado-digitalarchive\e2e"
+cd "C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e"
 npx playwright test {affected_files} --reporter=list 2>&1
 ```
 

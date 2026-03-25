@@ -26,17 +26,17 @@ Every line of code you produce must be idiomatic TypeScript Playwright. Read exi
 Before generating ANY code, you MUST read reference files to match their exact style.
 
 **ALWAYS read the target POM (if it exists)** from:
-`C:\Users\gals\repos\elado-digitalarchive\e2e\pages\`
+`C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\pages\`
 
 **ALWAYS read (minimum 2 existing test files if they exist)** from:
-`C:\Users\gals\repos\elado-digitalarchive\e2e\tests\`
+`C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\tests\`
 
 **ALWAYS read:**
 - `e2e/playwright.config.ts` -- Configuration
 - `e2e/fixtures/` -- Available fixtures
 - `e2e/utils/test-data.ts` -- Data generation utilities (if exists)
 
-All paths relative to: `C:\Users\gals\repos\elado-digitalarchive\`
+All paths relative to: `C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\`
 
 If this is the FIRST test suite being created (no existing files), establish the canonical patterns defined in Section 4 below.
 

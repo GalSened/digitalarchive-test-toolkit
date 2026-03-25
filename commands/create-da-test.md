@@ -22,7 +22,7 @@ allowed-tools:
 
 Invoke the `da-test-creator` skill to create Digital Archive E2E tests by exploring the live application first.
 
-The target test suite lives at: `C:\Users\gals\repos\elado-digitalarchive\e2e\`
+The target test suite lives at: `C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\`
 
 Pass $ARGUMENTS as the creation scope. Use the Skill tool to invoke `da-test-creator`.
 

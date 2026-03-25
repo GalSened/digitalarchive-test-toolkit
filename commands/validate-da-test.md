@@ -22,7 +22,7 @@ allowed-tools:
 
 Invoke the `da-test-validator` skill to validate Digital Archive E2E tests against the live application.
 
-The target test suite lives at: `C:\Users\gals\repos\elado-digitalarchive\e2e\`
+The target test suite lives at: `C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\`
 
 Pass $ARGUMENTS as the validation scope. Use the Skill tool to invoke `da-test-validator`.
 

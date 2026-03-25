@@ -82,7 +82,7 @@ Scope Analysis:
 
 ### Step 2: EXPLORE
 
-Read credentials from env files (check `e2e/.env` first, fallback `../.env`).
+Read credentials from env files (check `digitalarchive-e2e/.env` first, fallback `../digitalarchive.env`).
 
 Dispatch `archive-explorer` agent via Agent tool:
 
@@ -182,7 +182,7 @@ Use Agent tool:
   prompt: |
     You are the test-writer agent. Generate tests for the {page_name} feature.
 
-    Working directory: C:\Users\gals\repos\elado-digitalarchive\e2e\
+    Working directory: C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\
 
     SCOPE: {approved test plan from Step 4}
 
@@ -213,7 +213,7 @@ Use Agent tool:
   prompt: |
     You are the regression-runner agent. POM file {pom_file} was modified.
     Changes: {summary of extensions added}
-    Working directory: C:\Users\gals\repos\elado-digitalarchive\e2e\
+    Working directory: C:\Users\gals\repos\comsigntrust-automation-tests\apps\digitalarchive\digitalarchive-e2e\
     Run your full regression protocol.
 ```
 
